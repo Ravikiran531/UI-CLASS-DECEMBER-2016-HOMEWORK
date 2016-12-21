@@ -1,0 +1,20 @@
+notepad.text1
+1.what is version control tool?
+ans)A component of software configuration management, version control, also known as revision control or source control is the management of changes to documents.
+2.what is the Repository?
+ans)A software repository is a storage location from which software packages may be retrieved and installed on a computer.a receptacle or place where things are deposited, stored
+3.why do we need to use repository in software development?
+ans)In software development, a repository is a central file storage location. It is used by version control systems to store multiple versions of files. It can be easily used for the managesment of changes to documents.
+4.what is GIT?
+ans)Git  is a version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for software development, but it can be used to keep track of changes in any files. As a distributed revision control system it is aimed at speed, data integrity, and support for distributed, non-linear workflows.
+5.what  is GIT HUB?
+ans)GitHub is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
+6.diff b/n git and github?
+ans)Git is a revision control system, a tool to manage your source code history. GitHub is a hosting service for Git repositories. So they are not the same thing: Git the tool, GitHub the service for projects that use Git. 
+7.what is pull,push and commit in git?
+ans)pull:when others change the code we can pull that code into repository.
+push:we can change code or enter some code into the repository
+commit:commit is the comments about the Repository
+8.what are merge conflicts?
+if two people modify same line of code, the some manual overwrite of code is required and these are merge conflicts.
+
