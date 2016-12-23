@@ -1,0 +1,64 @@
+how to create list in html?ordered lists and un ordered lists?
+ans)1.Open a simple text editing program such as either Notepad or WordPad on Windows, or, on a Mac open up TextEdit.
+2.Type all preceding HTML text that you want before the horizontal line. 
+3.Determine what type of list you want to make (how the formatting should look)
+4.Type the unordered list opening tag, with <ul>and Type the list item opening tag for your first item with <li>.
+4.Type the unordered list opening tag, with <ol>
+and ype the list item opening tag for your first item with <li>
+unordered list:An unordered list is simply a list of related items whose order does not matter. Creating an unordered list in HTML is accomplished using the unordered list block-level element, <ul>.
+ordered list:The ordered list element, <ol>, works very much like the unordered list element; individual list items are created in the same manner. The main difference between an ordered list and an unordered list is that with an ordered list, the order in which items are presented is important.
+2.how to includes images in html?
+ans)Use the HTML <img> element to define an image.
+Use the HTML src attribute to define the URL of the image.
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed.
+Use the HTML width and height attributes to define the size of the image
+3.how to take user input in html?
+The HTML <form> element defines a form that is used to collect user input:
+<form>
+.
+form elements
+.
+</form>
+4.how to have links to different webpages and links to different parts of same page?
+ans)HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+a)
+Click your hyperlink on the about.html page. You should find that the index page will load. When you click the link on the index page, the about page will load. Create a third web page \
+b)
+You've been designing your site and have figured out that a page can be as long as necessary. This is great, but it can be a pain when you're dealing with longer pages. Help out your visitors by providing links that quickly take them to specific locations on the page. To do this within Visual Site Designer, you'll need to use the HTML tool to create two HTML boxes on the page. One box will be used for the link, and the other will be used to set the anchor.
+The first step is to set an anchor. The anchor is the place on the page where you want the user to be able to jump to. Select the HTML tool and click the place on the page where you would like to set the anchor. Then, enter the following code\
+<a name="anchorname"></a><h2>Here is my text</h2>
+The next step is to create a link to the anchor you just set. To do this, click the place on the page where you would like the link to appear, and enter the following link code into the Body HTML tab:
+<a href="#jsmith">Click here to learn about John Smith.</a>
+5.what is head, body and html element and why do we need them n page?
+The HTML <head> Element. The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag. HTML metadata is data about the HTML document. ... Metadata typically define the document title, character set, styles, links, scripts, and other meta information.
+Definition and Usage. The <body> tag defines the document's body. The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
+An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+
+<tagname>Content goes here...</tagname>
+6.what is semantic element, describe about each one of them?
+ans)A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+Semantic HTML can help web designers and developers convey meaning not simply in the presented page, but also with the tags and elements used to code that page, potentially improving accessibility, search engine indexing, and even human understanding.
+<form>:The HTML <form> element defines a form that is used to collect user input:
+
+<form>
+.
+form elements
+.
+</form>
+<table>:
+A simple HTML table, containing two columns and two rows:
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
