@@ -1,0 +1,336 @@
+1.explain all input types with examples?
+ans)input type Text:
+text can be inputted with this input type
+
+Example
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+input type password:
+password can be inputted in this field
+Example
+<form>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw">
+</form>
+input type submit:
+submit button can be appeared in this field
+
+
+Example
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+input type Reset:
+reset button resets all the form values to default
+
+Example
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+input type Radio:
+ <input type="radio"> defines a radio button.
+
+Radio buttons let a user select ONLY ONE of a limited number of choices:
+
+Example
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+check box:
+<input type="checkbox"> defines a checkbox.
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+Example
+<form>
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+button:
+<input type="button"> defines a button:
+
+Example
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+2.explain all input attributes?
+Attributes provide additional information about HTML elements.
+
+HTML Attributes
+All HTML elements can have attributes
+Attributes provide additional information about an element
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+The lang Attribute
+The language of the document can be declared in the <html> tag.
+
+The language is declared with the lang attribute.
+
+Declaring a language is important for accessibility applications (screen readers) and search engines:
+
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+...
+
+</body>
+</html>
+The first two letters specify the language (en). If there is a dialect, use two more letters (US).
+
+The title Attribute
+Here, a title attribute is added to the <p> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:
+
+Example
+<p title="I'm a tooltip">
+This is a paragraph.
+</p>
+
+The href Attribute
+HTML links are defined with the <a> tag. The link address is specified in the href attribute:
+
+Example
+<a href="http://www.w3schools.com">This is a link</a>
+
+
+Size Attributes
+HTML images are defined with the <img> tag.
+
+The filename of the source (src), and the size of the image (width and height) are all provided as attributes:
+
+Example
+<img src="svuca.edu" width="134" height="142">
+
+The image size is specified in pixels: width="134" means 104 screen pixels wide.
+
+You will learn more about images and the <img> tag later in this tutorial.
+
+The alt Attribute
+The alt attribute specifies an alternative text to be used, when an image cannot be displayed.
+
+The value of the attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a blind person, can "hear" the element.
+
+Example
+<img src="svuca.edu" alt="svuca.com" width="104" height="142">
+
+
+
+Sometimes it is necessary to use quotes. This example will not display the title attribute correctly, because it contains a space:
+
+Example
+<p title=About W3Schools>
+
+Using quotes are the most common. Omitting quotes can produce errors. 
+
+Single or Double Quotes?
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+
+In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:
+
+<p title='John "ShotGun" Nelson'>
+Or vice versa:
+
+<p title="John 'ShotGun' Nelson">
+Chapter Summary
+All HTML elements can have attributes
+The title attribute provides additional "tool-tip" information
+The href attribute provides address information for links
+The width and height attributes provide size information for images
+The alt attribute provides text for screen readers
+
+
+HTML Attributes
+Below is an alphabetical list of some attributes often used in HTML:
+
+Attribute	Description
+alt	Specifies an alternative text for an image, when the image cannot be displayed
+disabled	Specifies that an input element should be disabled
+href	Specifies the URL (web address) for a link
+id	Specifies a unique id for an element
+src	Specifies the URL (web address) for an image
+
+style	Specifies an inline CSS style for an element
+title	Specifies extra information about an element (displayed as a tool tip)
+3.what are semantic elements?
+ans)A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+4.diff b/n article,section,div?
+ans)article:The <article> element specifies independent, self-contained content.
+
+An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.
+
+Examples of where an <article> element can be used:
+
+Forum post
+Blog post
+Newspaper article
+Example
+<article>
+  <h1>What Does WWF Do?</h1>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.</p>
+</article>
+section:HTML5 <section> Element
+The <section> element defines a section in a document.
+A home page could normally be split into sections for introduction, content, and contact information.
+
+Example
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+div:HTML - Div Element(s) The <div> tag is nothing more than a container unit that encapsulates other page elements and divides the HTML document into sections. Web developers use <div> elements to group together HTML elements and apply CSS styles to many elements at once.
+explain about : ?
+The <section> element defines a section in a document.
+
+ "A section is a thematic grouping of content, typically with a heading."
+
+A home page could normally be split into sections for introduction, content, and contact information.
+
+Example
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+he <article> element specifies independent, self-contained content.
+
+An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.
+
+Examples of where an <article> element can be used:
+
+Forum post
+Blog post
+Newspaper article
+Example
+<article>
+  <h1>What Does WWF Do?</h1>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.</p>
+</article>
+The <header> element specifies a header for a document or section.
+
+The <header> element should be used as a container for introductory content.
+
+You can have several <header> elements in one document.
+
+The following example defines a header for an article:
+
+Example
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.</p>
+</article>
+HTML5 <footer> Element
+The <footer> element specifies a footer for a document or section.
+
+A <footer> element should contain information about its containing element.
+
+A footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.
+
+You may have several <footer> elements in one document.
+
+Example
+<footer>
+  <p>Posted by: Hege Refsnes</p>
+  <p>Contact information: <a href="mailto:someone@example.com">
+  someone@example.com</a>.</p>
+</footer>
+HTML5 <nav> Element
+The <nav> element defines a set of navigation links.
+
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.
+
+Example
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+HTML5 <aside> Element
+The <aside> element defines some content aside from the content it is placed in (like a sidebar).
+
+The aside content should be related to the surrounding content.
+
+Example
+<p>My family and I visited The Epcot center this summer.</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+</aside>
+The purpose of a figure caption is to add a visual explanation to an image.
+
+In HTML5, an image and a caption can be grouped together in a <figure> element:
+
+Example
+<figure>
+  <img src="pic_mountain.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>Fig1. - The Pulpit Rock, Norway.</figcaption>
+</figure>
+Thus the semantic elements are as below:
+Tag	Description
+<article>	Defines an article
+<aside>	Defines content aside from the page content
+<details>	Defines additional details that the user can view or hide
+<figcaption>	Defines a caption for a <figure> element
+<figure>	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+<footer>	Defines a footer for a document or section
+<header>	Specifies a header for a document or section
+<main>	Specifies the main content of a document
+<mark>	Defines marked/highlighted text
+<nav>	Defines navigation links
+<section>	Defines a section in a document
+<summary>	Defines a visible heading for a <details> element
+<time>	Defines a date/time
+5.diff b/n html4 and html5?
+HTML5 has several goals which differentiate it from HTML4.
+The primary one is consistent, defined error handling. As you know, HTML purposely supports 'tag soup', or the ability to write malformed code and have it corrected into a valid document. The problem is that the rules for doing this aren't written down anywhere. When a new browser vendor wants to enter the market, they just have to test malformed documents in various browsers (especially IE) and reverse-engineer their error handling. If they don't, then many pages won't display correctly (estimates place roughly 90% of pages on the net as being at least somewhat malformed).
+
+So, HTML5 is attempting to discover and codify this error handling, so that browser developers can all standardize and greatly reduce the time and money required to display things consistently. As well, long in the future after HTML has died as a document format, historians may still want to read our documents, and having a completely defined parsing algorithm will greatly aid this.
+The secondary goal of HTML5 is to develop the ability of the browser to be an application platform, via HTML, CSS, and Javascript. Many elements have been added directly to the language that are currently (in HTML4) Flash or JS-based hacks, such as <canvas>, <video>, and <audio>. Useful things such as Local Storage (a js-accessible browser-builtin sql database, for storing information beyond what cookies can hold), new input types such as date for which the browser can expose easy user interface (so that we don't have to use our js-based calendar date-pickers), and browser-supported form validation will make developing web applications much simpler for the developers, and make them much faster for the users (since many things will be supported natively, rather than hacked in via javascript).
+There are many other smaller efforts taking place in HTML5, such as better-defined semantic roles for existing elements (<strong> and <em> now actually mean something different, and even <b> and <i> have vague semantics that should work well when parsing legacy documents) and adding new elements with useful semantics - <article>, <section>, <header>, <aside>, and <nav> should replace the majority of <div>s used on a web page, making your pages a bit more semantic, but more importantly, easier to read. No more painful scanning to see just what that random </div> is closing - instead you'll have an obvious </header>, or </article>, making the structure of your document much more intuitive.
+6.what is form?
+ans)HTML Forms are required when you want to collect some data from the site visitor. For example during user registration you would like to collect information such as name, email address, credit card, etc.
+
+A form will take input from the site visitor and then will post it to a back-end application such as CGI, ASP Script or PHP script etc. The back-end application will perform required processing on the passed data based on defined business logic inside the application.
+
+There are various form elements available like text fields, textarea fields, drop-down menus, radio buttons, checkboxes, etc.
+
+The HTML <form> tag is used to create an HTML form and it has following syntax:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Input Control</title>
+</head>
+<body>
+<form >
+First name:  <input type="text" name="first_name" />
+<br>
+Last name:  <input type="text" name="last_name" />
+</form>
+</body>
+</html>
+
+
+
+
+
