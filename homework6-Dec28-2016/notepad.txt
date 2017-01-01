@@ -1,0 +1,42 @@
+what are different types in css?
+ans)there are three different types in css:
+1.inline style sheet
+2.internal style sheet
+3.External style sheet
+inline style sheet: for single element if we want styles then we can use inline style sheet.
+eg:<h1 style="color:blue">This is a heading.</h1>
+internal style sheet:it is defined in style element in head tag
+eg:<head>
+<style>
+body {
+    background-color: linen;
+}
+
+h1 {
+    color: maroon;
+} 
+</style>
+</head>
+External style sheet:whole website can be changed with single file.
+eg:<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+single file:
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+2.what is cascading in css?
+ans)many sty;le sheets can fall in one html document by one another.This is called cascading.
+3.why do we need to use css?
+ans)we use css for attaining different styles for a given html document.we can vary the sizes, align the words to center, justify the document etc,,.
+4.which type of css is in better practice?
+ans)External css we use more as its easy to use for changing whole website using one file then come internal.inline we use less in practise.
+5.what are selectors and why do we need them in css?
+ans)selectors are use to select the elements and style them.
+
+
