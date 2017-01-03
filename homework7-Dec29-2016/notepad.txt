@@ -1,0 +1,172 @@
+1.what is the difference between id, class, attribute, tagname selectors?
+ans)id selectors:syntax
+#id name
+{
+	css properties
+}
+eg:<!DOCTYPE html>
+<html>
+<head>
+<style>
+#lastname {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to My Homepage</h1>
+    <p id="lastname">My name is Donald.</p>
+  <p id="hometown">I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Mickey.</p>
+
+</body>
+</html>
+class selectors:syntax 
+.class{
+	css properties
+}
+eg:<!DOCTYPE html>
+<html>
+<head>
+<style>
+.intro {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+<div class="intro">
+  <p>My name is Donald.</p>
+  <p>I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Mickey.</p>
+
+</body>
+</html>
+tag name selectors:
+syntax: tagname{
+css properties
+}
+eg:<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+<div>
+  <p id="firstname">My name is Donald.</p>
+  <p id="hometown">I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Mickey.</p>
+
+</body>
+</html>
+what is css specifity?
+Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.
+
+0 Type selectors (e.g., h1) and pseudo-elements (e.g., :before).
+1 Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+2 ID selectors (e.g., #example).
+descendent selectors in css:
+At times, authors may want selectors to match an element that is the descendant of another element in the document tree (e.g., "Match those EM elements that are contained by an H1 element"). Descendant selectors express such a relationship in a pattern. A descendant selector is made up of two or more selectors separated by white space. A descendant selector of the form "A B" matches when an element B is an arbitrary descendant of some ancestor element A.
+
+For example, consider the following rules:
+
+h1 { color: red }
+em { color: red }
+Although the intention of these rules is to add emphasis to text by changing its color, the effect will be lost in a case such as:
+
+<H1>This headline is <EM>very</EM> important</H1>
+We address this case by supplementing the previous rules with a rule that sets the text color to blue whenever an EM occurs anywhere within an H1:
+
+h1 { color: red }
+em { color: red }
+h1 em { color: blue }
+The third rule will match the EM in the following fragment:
+
+<H1>This <SPAN class="myclass">headline 
+is <EM>very</EM> important</SPAN></H1>
+The following selector:
+
+div * p 
+matches a P element that is a grandchild or later descendant of a DIV element. Note the white space on either side of the "*" is not part of the universal selector; the white space is a combinator indicating that the DIV must be the ancestor of some element, and that that element must be an ancestor of the P.
+
+The selector in the following rule, which combines descendant and attribute selectors, matches any element that (1) has the "href" attribute set and (2) is inside a P that is itself inside a DIV:
+
+div p *[href]
+6.chid selectors in css?
+child selectors in css:
+A child selector matches when an element is the child of some element. A child selector is made up of two or more selectors separated by ">".
+
+The following rule sets the style of all P elements that are children of BODY:
+
+body > P { line-height: 1.3 }
+The following example combines descendant selectors and child selectors:
+
+div ol>li p
+It matches a P element that is a descendant of an LI; the LI element must be the child of an OL element; the OL element must be a descendant of a DIV. Notice that the optional white space around the ">" combinator has been left out.
+7.adjacent sibling selectors?
+Adjacent sibling selectors have the following syntax: E1 + E2, where E2 is the subject of the selector. The selector matches if E1 and E2 share the same parent in the document tree and E1 immediately precedes E2, ignoring non-element nodes (such as text nodes and comments).
+
+Thus, the following rule states that when a P element immediately follows a MATH element, it should not be indented:
+
+math + p { text-indent: 0 } 
+The next example reduces the vertical space separating an H1 and an H2 that immediately follows it:
+
+h1 + h2 { margin-top: -5mm }   
+The following rule is similar to the one in the previous example, except that it adds a class selector. Thus, special formatting only occurs when H1 has class="opener":
+
+h1.opener + h2 { margin-top: -5mm } 
+8.multiple selectors in css?
+ID and Class Selector
+
+As we covered above, you can target elements by a combination of ID and class.
+
+<h1 id="one" class="two">This Should Be Red</h1>
+#one.two { color: red; }
+#Double Class Selector
+
+Target an element that has all of multiple classes. Shown below with two classes, but not limited to two.
+
+<h1 class="three four">Double Class</h1>
+.three.four { color: red; } 
+9.variations in attribute based selectors?
+CSS defines three more attribute selector variations. These new selectors give us the ability to make partial matches to attribute values—we can match strings at the start, end, or anywhere within an attribute value.
+
+We can use the ^= operator to cause an attribute selector to match elements that have an attribute containing a value that starts with the specified value:
+
+a[href^="http:"] {
+  ⋮ declarations
+}
+This example matches a elements that have an href attribute value which starts with the characters “http:”.
+
+Using the $= operator, an attribute selector can match elements that have an attribute which contains a value ending with the specified value:
+
+img[src$=".png"] {
+  ⋮ declarations
+}
+This example matches a elements that have an href attribute value which starts with the characters “http:”.
+
+Using the $= operator, an attribute selector can match elements that have an attribute which contains a value ending with the specified value:
+
+div[id*="foo"] {
+  ⋮ declarations
+}
+This example matches div elements whose id attribute value contains the characters “foo”.
+
+
