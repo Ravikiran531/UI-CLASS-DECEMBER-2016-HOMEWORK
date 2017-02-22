@@ -1,0 +1,22 @@
+what is IIFE?why do we need to use?
+ans)An immediately-invoked function expression (or IIFE, pronounced "iffy") is a JavaScript programming language idiom which produces a lexical scope using JavaScript's function scoping
+(function () { … })();
+(function () { … }()); 
+what is name spacing in java script?why do we need to use them?
+ans)In many programming languages, namespacing is a technique employed to avoid collisions with other objects or variables in the global namespace. They're also extremely useful for helping organize blocks of functionality in your application into easily manageable groups that can be uniquely identified.
+what is module pattern?
+ans)The module pattern is a common JavaScript coding pattern. It’s generally well understood, but there are a number of advanced uses that have not gotten a lot of attention. In this article, I’ll review the basics and cover some truly remarkable advanced topics, including one which I think is original
+what are html dom events?
+ans)Event	Description	DOM
+onclick	The event occurs when the user clicks on an element	2
+oncontextmenu	The event occurs when the user right-clicks on an element to open a context menu	3
+ondblclick	The event occurs when the user double-clicks on an element	2
+onmousedown	The event occurs when the user presses a mouse button over an element	2
+onmouseenter	The event occurs when the pointer is moved onto an element	2
+onmouseleave	The event occurs when the pointer is moved out of an element	2
+onmousemove	The event occurs when the pointer is moving while it is over an element	2
+onmouseover	The event occurs when the pointer is moved onto an element, or onto one of its children	2
+onmouseout	The event occurs when a user moves the mouse pointer out of an element, or out of one of its children	2
+onmouseup	The event occurs when a user releases a mouse button over an element
+what is an event listener in java script?
+ans)element.addEventListener(event, function, useCapture); The first parameter is the type of the event (like "click" or "mousedown"). The second parameter is the function we want to call when the event occurs. The third parameter is a boolean value specifying whether to use event bubbling or event capturing.

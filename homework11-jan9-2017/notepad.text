@@ -1,0 +1,10 @@
+s said to be a preprocessed form of the input data, which is often used by some subsequent programs like compilers. The amount and kind of processing done depends on the nature of the preprocessor; some preprocessors are only capable of performing relatively simple textual substitutionscss box model?
+ans)All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+box sizing in  css?
+ans)The box-sizing property is used to alter the default CSS box model used to calculate width and height of the elements. It is possible to use this property to emulate the behavior of browsers that do not correctly support the CSS box model 
+what is sass?
+ans)Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+what is pre processor and why do we need to use preprocessor?
+ans)In computer science, a preprocessor is a program that processes its input data to produce output that is used as input to another program. The output i and macro expansions, while others have the power of full-fledged programming languages.
+display none and visibility hidden differences in css?when do we use either one of them?
+abs)display:none will not be available in the page and does not occupy any space. visibility:hidden hides an element, but it will still take up the same space as before. The element will be hidden, but still affect the layout. visibility:hidden preserve the space, whereas display:none doesn't preserve the space

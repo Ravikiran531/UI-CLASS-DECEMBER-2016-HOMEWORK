@@ -1,0 +1,203 @@
+all methods and properties for numbers,string?
+ans)numbers:
+Syntax
+Number.isFinite(value)
+Parameters
+
+value
+The value to be tested for finiteness.
+Return value
+
+A Boolean indicating whether or not the given value is a finite number.
+
+Description
+In comparison to the global isFinite() function, this method doesn't forcibly convert the parameter to a number. This means only values of the type number, that are also finite, return true.  
+number.isInteger(value)
+Parameters
+
+value
+The value to be tested for being an integer.
+Return value
+
+A Boolean indicating whether or not the given value is an integer.
+
+Description
+If the target value is an integer, return true, otherwise return false. If the value is NaN or infinite, return false.
+Number.isNaN(value)
+Parameters
+
+value
+The value to be tested for NaN.
+Return value
+
+A Boolean indicating whether or not the given value is NaN.
+
+Description
+Due to both equality operators, == and ===, evaluating to false when checking if NaN is NaN, the function Number.isNaN() has become necessary. This situation is unlike all other possible value comparisons in JavaScript.
+
+In comparison to the global isNaN() function, Number.isNaN() doesn't suffer the problem of forcefully converting the parameter to a number. This means it is now safe to pass values that would normally convert to NaN, but aren't actually the same value as NaN. This also means that only values of the type number, that are also NaN, return true. 
+Number Methods and Properties
+Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects).
+
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+
+The toString() Method
+toString() returns a number as a string.
+
+All number methods can be used on any type of numbers (literals, variables, or expressions):
+
+Example
+var x = 123;
+x.toString();            // returns 123 from variable x
+(123).toString();        // returns 123 from literal 123
+(100 + 23).toString();   // returns 123 from expression 100 + 23
+The toExponential() Method
+toExponential() returns a string, with a number rounded and written using exponential notation.
+
+A parameter defines the number of characters behind the decimal point:
+
+Example
+var x = 9.656;
+x.toExponential(2);     // returns 9.66e+0
+x.toExponential(4);     // returns 9.6560e+0
+x.toExponential(6);     // returns 9.656000e+0
+Try it yourself »
+The parameter is optional. If you don't specify it, JavaScript will not round the number.
+
+The toFixed() Method
+toFixed() returns a string, with the number written with a specified number of decimals:
+
+Example
+var x = 9.656;
+x.toFixed(0);           // returns 10
+x.toFixed(2);           // returns 9.66
+x.toFixed(4);           // returns 9.6560
+x.toFixed(6);           // returns 9.656000
+
+toFixed(2) is perfect for working with money.
+
+The toPrecision() Method
+toPrecision() returns a string, with a number written with a specified length:
+
+Example
+var x = 9.656;
+x.toPrecision();        // returns 9.656
+x.toPrecision(2);       // returns 9.7
+x.toPrecision(4);       // returns 9.656
+x.toPrecision(6);       // returns 9.65600
+Try it Yourself »
+The valueOf() Method
+valueOf() returns a number as a number.
+
+Example
+var x = 123;
+x.valueOf();            // returns 123 from variable x
+(123).valueOf();        // returns 123 from literal 123
+(100 + 23).valueOf();   // returns 123 from expression 100 
+In JavaScript, a number can be a primitive value (typeof = number) or an object (typeof = object).
+
+The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.
+
+There is no reason to use it in your code.
+
+All JavaScript data types have a valueOf() and a toString() method.
+
+Converting Variables to Numbers
+There are 3 JavaScript methods that can be used to convert variables to numbers:
+
+The Number() method
+The parseInt() method
+The parseFloat() method
+These methods are not number methods, but global JavaScript methods.
+
+Global Methods
+JavaScript global methods can be used on all JavaScript data types.
+
+These are the most relevant methods, when working with numbers:
+
+Method	Description
+Number()	Returns a number, converted from its argument.
+parseFloat()	Parses its argument and returns a floating point number
+parseInt()	Parses its argument and returns an integer
+The Number() Method
+Number() can be used to convert JavaScript variables to numbers:
+
+Example
+x = true;
+Number(x);        // returns 1
+x = false;     
+Number(x);        // returns 0
+x = new Date();
+Number(x);        // returns 1404568027739
+x = "10"
+Number(x);        // returns 10
+x = "10 20"
+Number(x);        // returns NaN
+
+Used on Date(), the Number() method returns the number of milliseconds since 1.1.1970.
+
+The parseInt() Method
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+
+Example
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+If the number cannot be converted, NaN (Not a Number) is returned.
+
+The parseFloat() Method
+parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+
+Example
+parseFloat("10");        // returns 10
+parseFloat("10.33");     // returns 10.33
+parseFloat("10 20 30");  // returns 10
+parseFloat("10 years");  // returns 10
+parseFloat("years 10");  // returns NaN 
+string: 
+String Length
+The length property returns the length of a string:
+
+Example
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+
+Finding a String in a String
+The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+
+The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+
+Both the indexOf(), and the lastIndexOf() methods return -1 if the text is not found.
+
+JavaScript counts positions from zero.
+0 is the first position in a string, 1 is the second, 2 is the third ...
+
+Both methods accept a second parameter as the starting position for the search.
+
+Searching for a String in a String
+The search() method searches a string for a specified value and returns the position of the match:
+
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate")
+
+
+
+
+
+
+
+
+
+

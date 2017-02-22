@@ -1,0 +1,55 @@
+1.what is call, apply, and bind in javascript?
+ans)Use .bind() when you want that function to later be called with a certain context, useful in events. Use .call() or .apply() when you want to invoke the funciton immediately, and modify the context.
+
+Call/apply call the function immediately, whereas bind returns a function that when later executed will have the correct context set for calling the original function. This way you can maintain context in async callbacks, and events.
+2.what is context in java script?
+ans)Fundamentally, scope is function-based while context is object-based. In other words, scope pertains to the variable access of a function when it is invoked and is unique to each invocation. Context is always the value of the this keyword which is a reference to the object that “owns” the currently executing code.
+3.what is lexical scope?
+ans)Lexical scope is a very very powerful concept. Lexical scoping: Variables declared outside of a function are global variables and are visible everywhere in a JavaScript program. Variables declared inside a function have function scope and are visible only to code that appears inside that function.
+4.what is for in loop in java script?
+ans)for (variable in object) { ...
+}
+variable
+A different property name is assigned to variable on each iteration.
+object
+Object whose enumerable properties are iterated
+diff b/n prototype and extends in java script?
+andNearly all objects in JavaScript are instances of Object; a typical object inherits properties (including methods) from Object.prototype, although these properties may be shadowed (a.k.a. overridden). However, an Object may be deliberately created for which this is not true (e.g. by Object.create(null)), or it may be altered so that this is no longer true (e.g. with Object.setPrototypeOf).
+
+Changes to the Object prototype object are seen by all objects through prototype chaining, unless the properties and methods subject to those changes are overridden further along the prototype chain.  This provides a very powerful although potentially dangerous mechanism to override or extend object behavior
+The Object.prototype property represents the Object prototype object.
+
+Property attributes of Object.prototype
+Writable	no
+Enumerable	no
+Configurable	no
+class ChildClass extends ParentClass { ... }
+DescriptionEDIT
+The extends keyword can be used to subclass custom classes as well as built-in objects.
+
+The .prototype of the extension must be an Object or null.
+
+Examples
+Using extends
+
+The first example creates a class called Square from a class called Polygon. This example is extracted from this live demo (source).
+
+class Square extends Polygon {
+  constructor(length) {
+    // Here, it calls the parent class' constructor with lengths
+    // provided for the Polygon's width and height
+    super(length, length);
+    // Note: In derived classes, super() must be called before you
+    // can use 'this'. Leaving this out will cause a reference error.
+    this.name = 'Square';
+  }
+
+  get area() {
+    return this.height * this.width;
+  }
+
+  set area(value) {
+    this.height = this.width = Math.sqrt(value);
+    this.area = value;
+  } 
+}

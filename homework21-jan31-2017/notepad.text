@@ -1,0 +1,32 @@
+what is event listener?
+ans)element.addEventListener(event, function, useCapture); The first parameter is the type of the event (like "click" or "mousedown"). The second parameter is the function we want to call when the event occurs. The third parameter is a boolean value specifying whether to use event bubbling or event capturing.
+what is id, class,tagname
+ans)#id	$("#lastname")	The element with id="lastname"
+.class	$(".intro")	All elements with class="intro"
+.class,.class	$(".intro,.demo")	All elements with the class "intro" or "demo"
+element	$("p")	All <p> elements
+what is document.getelement by classname id and queryselector all?
+ans)document.getElementById()	Returns the element that has the ID attribute with the specified value
+document.getElementsByClassName()	Returns a NodeList containing all elements with the specified class name
+document.getElementsByName()	Returns a NodeList containing all elements with a specified name
+document.getElementsByTagName()	Returns a NodeList containing all elements with the specified tag name
+Get all elements in the document with class="example":
+
+var x = document.querySelectorAll(".example")
+Definition and Usage
+The querySelectorAll() method returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object. 
+5.event propagation?
+ans)The event.stopPropagation() method stops the bubbling of an event to parent elements, preventing any parent event handlers from being executed. Tip: Use the event.isPropagationStopped() method to check whether this method was called for the event.
+what is event bubbling and event capturing?
+ans)Event bubbling directs an event to its intended target, it works like this: A button is clicked and the event is directed to the button. If an event handler is set for that object, the event is triggered. If no event handler is set for that object, the event bubbles up (like a bubble in water) to the objects parent.
+Event capturing is the opposite of bubbling (events are handled at higher levels first, then sink down to individual elements at lower levels). Event capturing is supported in fewer browsers and rarely used; notably, Internet Explorer prior to version 9.0 does not support event capturing.
+what is event stop propagation v/s event stop immediate propagation?
+ans)stopPropagation will prevent any parent handlers from being executed stopImmediatePropagation will prevent any parent handlers and also any other handlers from executing
+
+$("p").click(function(event){
+  event.stopImmediatePropagation();
+});
+$("p").click(function(event){
+  // This function won't be executed
+  $(this).css("background-color", "#f00");
+});  

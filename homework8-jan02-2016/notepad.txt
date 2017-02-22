@@ -1,0 +1,122 @@
+1.what are pseudo classes in css?
+ans)A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+2. what are pseudo elements in css?
+ans)A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element 
+3.diff b/n pseudo classes and pseudo elements? 
+ans)A pseudo-class is way of selecting certain parts of a HTML document, based in principle not on the HTML document tree itself and its elements or on characteristics like name, attributes or contents, but on other phantom conditions like language encoding or the dynamic state of an element.
+
+The original pseudo-class defined dynamic states of an element that are entered and exited over time, or through user intervention. CSS2 expanded on this concept to include virtual conceptual document components or inferred portions of the document tree e.g. first-child. Pseudo-classes operate as if phantom classes were added to various elements.
+pSEUDO-ELEMENTS are used to address sub-parts of elements. They allow you to set style on a part of an element's content beyond what is specified in the documents. In other words they allow logical elements to be defined which are not actually in the document element tree. Logical elements allow implied semantic structure to be addressed in CSS selectors.
+4.explain all pseudo classes and elemets with examples?
+ams)a:link /* This selects any "a" element whose target has not been visited.*/
+{
+padding : 4px;
+text-decoration : none;
+width : 10%;
+color : #000000; /* black text color */
+background-color : #99FF99; /* set to a pastel green */
+border-top : 2px solid #ccffcc; /* highlight color */
+border-left : 2px solid #ccffcc; /* highlight color */
+border-bottom : 2px solid #003300; /* shadow color */
+border-right : 2px solid #003300; /* shadow color */
+}
+
+a:visited /* This selects any "a" element whose target has been visited.*/
+{ padding : 4px;
+text-decoration : none;
+color : #000000; /* black text color */
+background-color : #ccccff; /* set to a lavender */
+border-top : 2px solid #ffffff; /* highlight color */
+border-left : 2px solid #ffffff; /* highlight color */
+border-bottom : 2px solid #333366; /* shadow color *
+border-right : 2px solid #333366; /* shadow color */
+}
+
+a:hover /* This selects any "a" element which is in a hover state. This is a state during pointer movement within the rendering region of an element. The user designates an element but does not activate it. */
+{
+color : #000000; /* black text color */
+background-color : #99cc99; /* desaturated color */
+border-top : 2px solid #003300; /* shadow color */
+border-left : 2px solid #003300; /* shadow color */
+border-bottom : 2px solid #ccffcc; /* highlight color */
+border-right : 2px solid #ccffcc; /* highlight color */
+}
+
+a:focus /* This selects any "a" element which currently has focus. Focus is a state during which an element accepts keyboard input or other forms of text input. */
+{
+padding : 4px;
+text-decoration : none;
+width : 10%;
+color : #000000; /* black text color */
+background-color : #ffff99; /* set to a pastel yellow */
+border-top : 2px solid #ffffcc; /* highlight color */
+border-left : 2px solid #ffffcc; /* highlight color */
+border-bottom : 2px solid #666633; /* shadow color */
+border-right : 2px solid #666633; /* shadow color */
+}
+
+a:active /* This selects any "a" element which is in a state of activation. Active is a state during pointer activation (eg: press and release of a mouse) within the rendering region of an element.*/
+{
+padding : 4px;
+text-decoration : none;
+width : 10%;
+color : #000000; /* black text color */
+background-color : #ff99ff; /* set to a pink */
+border-top : 2px solid #ffccff; /* highlight color */
+border-left : 2px solid #ffccff; /* highlight color */
+border-bottom : 2px solid #663366; /* shadow color */
+border-right : 2px solid #663366; /* shadow color */
+}
+
+pseodo elements:
+/* The following rule selects the first letter of a heading 1 and sets the font to 2em, cursive, with a green background. First-letter selects the first rendered letter/character for a block-level element. */
+
+h1:first-letter {
+font-size : 2em;
+font-family : "Lucida Handwriting", "Lucida Sans", "Lucida Console", cursive;
+background-color : #ccffcc;
+}
+
+/* The following rule selects the first displayed line in a paragraph and makes it bold. First-line selects the first rendered line on the output device of a block-level element. */
+
+p:first-line {
+font-weight : bold;
+}
+
+/* The following rule selects any content placed before a blockquote and inserts the phrase "Quote of the day:" in bold small caps with a green background. */
+
+blockquote:before {
+content : "Quote of the day:";
+background-color : #ccffcc;
+font-weight : bold;
+font-variant : small-caps;
+}
+
+/* The following rule selects any content placed before a "q" element and inserts the smart open quote. */
+
+q:before {
+content : open-quote;
+}
+
+/* The following rule selects any content placed after a "q" element and inserts the smart close quote. */
+
+q:after{
+content : close-quote;
+}
+5.what are media queries and how can you use them? 
+ans)Media Queries is a CSS3 module allowing content rendering to adapt to conditions such as screen resolution (e.g. smartphone screen vs. computer screen).It uses the @media rule to include a block of CSS properties only if a certain condition is true.
+6.what is res[ponsive web design?
+ans)Responsive Web design is the approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation. The practice consists of a mix of flexible grids and layouts, images and an intelligent use of CSS media queries.
+
+
