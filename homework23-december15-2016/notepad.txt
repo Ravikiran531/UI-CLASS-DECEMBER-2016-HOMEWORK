@@ -1,0 +1,238 @@
+1.basic css selectors?
+ans)Selector	Example	Example description	CSS
+.class	.intro	Selects all elements with class="intro"	
+#id	#firstname	Selects the element with id="firstname"	
+*	*	Selects all elements	
+element	p	Selects all <p> elements	
+element,element	div, p	Selects all <div> elements and all <p> elements	
+element element	div p	Selects all <p> elements inside <div> elements	
+element>element	div > p	Selects all <p> elements where the parent is a <div> element	
+element+element	div + p	Selects all <p> elements that are placed immediately after <div> elements	
+element1~element2	p ~ ul	Selects every <ul> element that are preceded by a <p> element	
+[attribute]	[target]	Selects all elements with a target attribute	
+[attribute=value]	[target=_blank]	Selects all elements with target="_blank"	
+[attribute~=value]	[title~=flower]	Selects all elements with a title attribute containing the word "flower"	
+[attribute|=value]	[lang|=en]	Selects all elements with a lang attribute value starting with "en"	
+[attribute^=value]	a[href^="https"]	Selects every <a> element whose href attribute value begins with "https"	
+[attribute$=value]	a[href$=".pdf"]	Selects every <a> element whose href attribute value ends with ".pdf"	
+[attribute*=value]	a[href*="w3schools"]	Selects every <a> element whose href attribute value contains the substring 
+:active	a:active	Selects the active link	
+::after	p::after	Insert something after the content of each <p> element	
+::before	p::before	Insert something before the content of each <p> element	
+:checked	input:checked	Selects every checked <input> element	
+:disabled	input:disabled	Selects every disabled <input> element	
+:empty	p:empty	Selects every <p> element that has no children (including text nodes)	
+:enabled	input:enabled	Selects every enabled <input> element	
+:first-child	p:first-child	Selects every <p> element that is the first child of its parent	
+::first-letter	p::first-letter	Selects the first letter of every <p> element	
+::first-line	p::first-line	Selects the first line of every <p> element	
+:first-of-type	p:first-of-type	Selects every <p> element that is the first <p> element of its parent	
+:focus	input:focus	Selects the input element which has focus	
+:hover	a:hover	Selects links on mouse over	
+:in-range	input:in-range	Selects input elements with a value within a specified range	
+:invalid	input:invalid	Selects all input elements with an invalid value	
+:lang(language)	p:lang(it)	Selects every <p> element with a lang attribute equal to "it" (Italian)	
+:last-child	p:last-child	Selects every <p> element that is the last child of its parent	
+:last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent	
+:link	a:link	Selects all unvisited links	
+:not(selector)	:not(p)	Selects every element that is not a <p> element	
+:nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent	
+:nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child	
+:nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child	
+:nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent	
+:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent	
+:only-child	p:only-child	Selects every <p> element that is the only child of its parent	
+:optional	input:optional	Selects input elements with no "required" attribute	
+:out-of-range	input:out-of-range	Selects input elements with a value outside a specified range	
+:read-only	input:read-only	Selects input elements with the "readonly" attribute specified	
+:read-write	input:read-write	Selects input elements with the "readonly" attribute NOT specified	
+:required	input:required	Selects input elements with the "required" attribute specified	
+:root	:root	Selects the document's root element	
+::selection	::selection	Selects the portion of an element that is selected by a user	 
+:target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)	
+:valid	input:valid	Selects all input elements with a valid value	
+:visited	a:visited	Selects all visited links
+attribute based selectors?
+ans)Attribute Contains Prefix Selector [name|=”value”]
+Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).
+Attribute Contains Selector [name*=”value”]
+Selects elements that have the specified attribute with a value containing a given substring.
+Attribute Contains Word Selector [name~=”value”]
+Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.
+Attribute Ends With Selector [name$=”value”]
+Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.
+Attribute Equals Selector [name=”value”]
+Selects elements that have the specified attribute with a value exactly equal to a certain value.
+Also in: Selectors > jQuery Extensions
+Attribute Not Equal Selector [name!=”value”]
+Select elements that either don’t have the specified attribute, or do have the specified attribute but not with a certain value.
+Attribute Starts With Selector [name^=”value”]
+Selects elements that have the specified attribute with a value beginning exactly with a given string.
+Has Attribute Selector [name]
+Selects elements that have the specified attribute, with any value.
+Multiple Attribute Selector [name=”value”][name2=”value2″]
+Matches elements that match all of the specified attribute filters
+child filter selectors?
+ans):first-child Selector
+Selects all elements that are the first child of their parent.
+:first-of-type Selector
+Selects all elements that are the first among siblings of the same element name.
+:last-child Selector
+Selects all elements that are the last child of their parent.
+:last-of-type Selector
+Selects all elements that are the last among siblings of the same element name.
+:nth-child() Selector
+Selects all elements that are the nth-child of their parent.
+:nth-last-child() Selector
+Selects all elements that are the nth-child of their parent, counting from the last element to the first.
+:nth-last-of-type() Selector
+Selects all the elements that are the nth-child of their parent in relation to siblings with the same element name, counting from the last element to the first.
+:nth-of-type() Selector
+Selects all elements that are the nth child of their parent in relation to siblings with the same element name.
+:only-child Selector
+Selects all elements that are the only child of their parent.
+content-filter-selector ?
+ans):contains() Selector
+Select all elements that contain the specified text.
+:empty Selector
+Select all elements that have no children (including text nodes).
+Also in: Selectors > jQuery Extensions
+:has() Selector
+Selects elements which contain at least one element that matches the specified selector.
+Also in: Selectors > jQuery Extensions
+:parent Selector
+Select all elements that have at least one child node (either an element or text).
+form selectors?
+ans)button Selector
+Selects all button elements and elements of type button.
+Also in: Selectors > jQuery Extensions
+:checkbox Selector
+Selects all elements of type checkbox.
+:checked Selector
+Matches all elements that are checked or selected.
+:disabled Selector
+Selects all elements that are disabled.
+:enabled Selector
+Selects all elements that are enabled.
+Also in: Selectors > jQuery Extensions
+:file Selector
+Selects all elements of type file.
+Also in: Selectors > Basic Filter
+:focus Selector
+Selects element if it is currently focused.
+Also in: Selectors > jQuery Extensions
+:image Selector
+Selects all elements of type image.
+Also in: Selectors > jQuery Extensions
+:input Selector
+Selects all input, textarea, select and button elements.
+Also in: Selectors > jQuery Extensions
+:password Selector
+Selects all elements of type password.
+Also in: Selectors > jQuery Extensions
+:radio Selector
+Selects all elements of type radio.
+Also in: Selectors > jQuery Extensions
+:reset Selector
+Selects all elements of type reset.
+Also in: Selectors > jQuery Extensions
+:selected Selector
+Selects all elements that are selected.
+Also in: Selectors > jQuery Extensions
+:submit Selector
+Selects all elements of type submit.
+Also in: Selectors > jQuery Extensions
+:text Selector
+Selects all input elements of type text.
+hierarchy selectors?
+ans)Child Selector (“parent > child”)
+Selects all direct child elements specified by “child” of elements specified by “parent”.
+Descendant Selector (“ancestor descendant”)
+Selects all elements that are descendants of a given ancestor.
+Next Adjacent Selector (“prev + next”)
+Selects all next elements matching “next” that are immediately preceded by a sibling “prev”.
+Next Siblings Selector (“prev ~ siblings”)
+Selects all sibling elements that follow after the “prev” element, have the same parent, and match the filtering “siblings” selector.
+jquery-selectors extentions?
+:animated Selector
+Select all elements that are in the progress of an animation at the time the selector is run.
+Also in: Selectors > Attribute
+Attribute Not Equal Selector [name!=”value”]
+Select elements that either don’t have the specified attribute, or do have the specified attribute but not with a certain value.
+Also in: Selectors > Form
+:button Selector
+Selects all button elements and elements of type button.
+Also in: Selectors > Form
+:checkbox Selector
+Selects all elements of type checkbox.
+Also in: Selectors > Basic Filter
+:eq() Selector
+Select the element at index n within the matched set.
+Also in: Selectors > Basic Filter
+:even Selector
+Selects even elements, zero-indexed. See also odd.
+Also in: Selectors > Form
+:file Selector
+Selects all elements of type file.
+Also in: Selectors > Basic Filter
+:first Selector
+Selects the first matched DOM element.
+Also in: Selectors > Basic Filter
+:gt() Selector
+Select all elements at an index greater than index within the matched set.
+Also in: Selectors > Content Filter
+:has() Selector
+Selects elements which contain at least one element that matches the specified selector.
+Also in: Selectors > Basic Filter
+:header Selector
+Selects all elements that are headers, like h1, h2, h3 and so on.
+Also in: Selectors > Visibility Filter
+:hidden Selector
+Selects all elements that are hidden.
+Also in: Selectors > Form
+:image Selector
+Selects all elements of type image.
+Also in: Selectors > Form
+:input Selector
+Selects all input, textarea, select and button elements.
+Also in: Selectors > Basic Filter
+:last Selector
+Selects the last matched element.
+Also in: Selectors > Basic Filter
+:lt() Selector
+Select all elements at an index less than index within the matched set.
+Also in: Selectors > Basic Filter
+:odd Selector
+Selects odd elements, zero-indexed. See also even.
+Also in: Selectors > Content Filter
+:parent Selector
+Select all elements that have at least one child node (either an element or text).
+Also in: Selectors > Form
+:password Selector
+Selects all elements of type password.
+Also in: Selectors > Form
+:radio Selector
+Selects all elements of type radio.
+Also in: Selectors > Form
+:reset Selector
+Selects all elements of type reset.
+Also in: Selectors > Form
+:selected Selector
+Selects all elements that are selected.
+Also in: Selectors > Form
+:submit Selector
+Selects all elements of type submit.
+Also in: Selectors > Form
+:text Selector
+Selects all input elements of type text.
+Also in: Selectors > Visibility Filter
+:visible Selector
+Selects all elements that are visible.
+visibility-filter-selectors ?
+:hidden Selector
+Selects all elements that are hidden.
+Also in: Selectors > jQuery Extensions
+:visible Selector
+Selects all elements that are visible.
+
+
